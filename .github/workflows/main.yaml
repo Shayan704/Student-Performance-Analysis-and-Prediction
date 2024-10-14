@@ -40,9 +40,9 @@ jobs:
         id: build-image
         run: |
           IMAGE_TAG=${GITHUB_SHA::7} # Set IMAGE_TAG to the first 7 characters of the commit SHA
-          echo "Image will be tagged as: shayan704/Student_marks_prediction:$IMAGE_TAG" # Debug logging
-          docker build -t shayan704/Student_marks_prediction:$IMAGE_TAG .
-          docker tag shayan704/Student_marks_prediction:$IMAGE_TAG shayan704/Student_marks_prediction:latest
+          echo "Image will be tagged as: shayan704/student_marks_prediction:$IMAGE_TAG" # Debug logging
+          docker build -t shayan704/student_marks_prediction:$IMAGE_TAG .
+          docker tag shayan704/student_marks_prediction:$IMAGE_TAG shayan704/student_marks_prediction:latest
           echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV # Set IMAGE_TAG as an environment variable for the next steps
 
       - name: Login to DockerHub
@@ -55,8 +55,8 @@ jobs:
       - name: Push Docker Image to DockerHub
         run: |
           echo "Pushing Docker image with tag: $IMAGE_TAG"
-          docker push shayan704/Student_marks_prediction:$IMAGE_TAG
-          docker push shayan704/Student_marks_prediction:latest
+          docker push shayan704/student_marks_prediction:$IMAGE_TAG
+          docker push shayan704/student_marks_prediction:latest
 
       - name: Clean up Docker Images
         run: |
