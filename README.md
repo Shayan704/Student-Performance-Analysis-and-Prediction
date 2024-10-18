@@ -7,7 +7,7 @@ Student performance analysis and prediction using datasets has become an essenti
 The motivation behind this project stems from the need to enhance educational outcomes by identifying areas of improvement, personalizing learning experiences, and providing targeted support to struggling students. By leveraging data-driven insights, educators can make informed decisions that help students achieve their full potential. Additionally, this approach aids school administrators and policymakers in allocating resources more effectively, ensuring that interventions are timely and impactful.
 
 ## Problem Statement
-Despite the potential benefits, accurately predicting student performance remains a challenging task due to the complex interplay of various factors such as socio-economic background, learning habits, and psychological factors. Traditional methods of assessment often fail to capture these nuances, leading to suboptimal educational interventions. This project aims to address this problem by developing a robust machine learning model that can predict student performance with high accuracy, thereby enabling educators to implement more effective and personalized educational strategies.
+Accurately predicting student performance is challenging due to the complex interplay of various factors such as socio-economic background, learning habits, and psychological factors. Traditional methods of assessment often fail to capture these nuances, leading to suboptimal educational interventions. This project aims to address this issue by developing a robust machine learning model that can predict student performance with high accuracy, enabling educators to implement more effective and personalized educational strategies.
 
 ## Features
 - Data preprocessing and visualization
@@ -115,3 +115,5 @@ This project uses CI/CD pipelines and is built in a completely modular way. It u
 - `RENDER_SERVICE_ID`
 
 These secrets are required to ensure the CI/CD pipeline can build, test, and deploy your application automatically.
+
+The project is deployed and can be accessed live at [Student Performance Prediction](https://student-marks-prediction-0mks.onrender.com).
