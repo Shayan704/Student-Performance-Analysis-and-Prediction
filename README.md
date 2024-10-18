@@ -117,3 +117,4 @@ This project uses CI/CD pipelines and is built in a completely modular way. It u
 These secrets are required to ensure the CI/CD pipeline can build, test, and deploy your application automatically.
 
 The project is deployed and can be accessed live at [Student Performance Prediction](https://student-marks-prediction-0mks.onrender.com).
+**Note:** Before accessing the deployed project, please reach out via email at **shayanmandal100@gmail.com** to request the project activation. This will ensure the deployment is up and running for your use.
